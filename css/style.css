@@ -1,0 +1,546 @@
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+#kurzor {
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.grid-kontener {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-kontener > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.kozpont {
+    grid-area: 1 / 2 / 5 / 8;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    
+
+    .urlapkinezet {
+        max-width: 60vw;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 860px) {
+    
+
+    .urlapkinezet {
+        max-width: 80vw;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+.oldalmenuosztaly {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.oldalmenuosztaly a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.oldalmenuosztaly a:hover {
+    color: #f1f1f1;
+}
+
+.oldalmenuosztaly .bezaroGomb {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    -webkit-transition: margin-left .5s;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .oldalmenuosztaly {
+        padding-top: 15px;
+    }
+
+    .oldalmenuosztaly a {
+        font-size: 18px;
+    }
+
+    .urlapkinezet {
+        max-width: 90vw;
+        font-size: 1rem;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.urlapkinezet {
+    max-width: 40vw;
+    padding: 10px 20px;
+    background: white;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.2rem;
+}
+.urlapkinezet fieldset {
+    border: none;
+}
+
+.urlapkinezet legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.urlapkinezet label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.urlapkinezet input[type="text"],
+.urlapkinezet input[type="date"],
+.urlapkinezet input[type="datetime"],
+.urlapkinezet input[type="email"],
+.urlapkinezet input[type="number"],
+.urlapkinezet input[type="search"],
+.urlapkinezet input[type="time"],
+.urlapkinezet input[type="url"],
+.urlapkinezet textarea,
+.urlapkinezet input[type="password"],
+.urlapkinezet select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    font-size: 16px;
+    margin: .5rem 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+.urlapkinezet input[type="text"]:focus,
+.urlapkinezet input[type="date"]:focus,
+.urlapkinezet input[type="datetime"]:focus,
+.urlapkinezet input[type="email"]:focus,
+.urlapkinezet input[type="number"]:focus,
+.urlapkinezet input[type="search"]:focus,
+.urlapkinezet input[type="time"]:focus,
+.urlapkinezet input[type="url"]:focus,
+.urlapkinezet input[type="password"]:focus,
+.urlapkinezet textarea:focus,
+.urlapkinezet select:focus {
+    background: #d2d9dd;
+}
+
+.urlapkinezet select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+.urlapkinezet .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+}
+
+.urlapkinezet input[type="submit"],
+.urlapkinezet input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.urlapkinezet input[type="submit"]:hover,
+.urlapkinezet input[type="button"]:hover {
+    background: #109177;
+}
+
+h1{
+ text-align: center;
+ font-size: 3rem;
+ margin-bottom: 2.5rem;
+}
+.gomb{    position: relative;
+    display: block;
+    padding: 20px 0;
+    color: #FFF;
+    margin: 0 auto;
+    background: #ff4444;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.gomb:hover{background: #CC0000;}
+
+.gomb1{    position: relative;
+    display: block;
+    padding: 20px 0;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.gomb1:hover{background: #109177;}
+
+.btn{
+    border-radius: 0px;
+    border: 0;
+    font-size:1.1rem;
+    width: 100%;
+}
+
+.admin{
+    margin: 20px auto 10px;
+    text-align:center;
+}
+.kerdes_kep{
+    width:100%;
+}
+
+.sorozat{
+    display: inline-block;
+    max-width: 22.5%;
+}
+
+.justified-sorozat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feladat{
+    font-weight:500;
+    font-size:1.2rem;
+    margin-bottom:.5rem;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+.megsegomb {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+     text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.tarolo {
+  padding: 16px;
+}
+
+span.jelszo {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.adminbelep {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.tarolo-tartalom {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animacio {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+  span.jelszo {
+     display: block;
+     float: none;
+  }
+  .megsegomb {
+     width: 100%;
+       text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  }
+}
+.gomb2{
+    background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.figyel{
+	color:red;
+	font-weight:bold;
+}
+.rejtett{
+	display:none;
+}
+.bevittmenupont{
+	color: #818181;
+	cursor:pointer;
+}
+.bevittmenupont:hover {
+    color: #f1f1f1;
+}
+.semmi{
+display:none;	
+}
+.kattinthato{
+	cursor:pointer;
+}
